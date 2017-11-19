@@ -23,7 +23,8 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
-    "body-parser": "^1.17.2"
+    "body-parser": "^1.18.2",
+    "react-router-dom": "^4.2.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

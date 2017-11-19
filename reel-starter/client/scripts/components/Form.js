@@ -29,6 +29,15 @@ class Form extends React.Component {
     }
     handleSubmit(e) {
         e.preventDefault();
+        const movie = Object.assign({}, this.state);
+        fetch("/api/movies", {
+            method: "POST",
+            body: JSON.stringify(movie),
+            headers: {
+                "Content-type": "application/json",
+            }
+        })
+        .then(() => this.props.fetchMovies());
     }
     render() {
         return (
